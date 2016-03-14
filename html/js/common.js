@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+	//Hover for .forwho__sidebar__item__value__helper
+	$(".forwho__sidebar__item__value__helper").on("mouseenter", function () {
+		$(this).show();
+	});
+	$(".forwho__sidebar__item__value__helper").on("mouseleave", function () {
+		$(this).hide();
+	});
+	$(".forwho__sidebar__item__value__imgicon").on("mouseenter", function () {
+		$(".forwho__sidebar__item__value__helper").show();
+	});
+	$(".forwho__sidebar__item__value__imgicon").on("mouseleave", function () {
+		$(".forwho__sidebar__item__value__helper").hide();
+	});
+
 	//Placeholder
 	//Doc: https://github.com/NV/placeholder.js/
 	$("[placeholder]").textPlaceholder();

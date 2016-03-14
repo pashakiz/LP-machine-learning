@@ -180,9 +180,165 @@ header.header {
 }
 
 .forwho {
-
+	background-color: #eff0f4;
+	padding: 40px 0;
+	color: #282a2c;
 }
-
+.forwho__title {
+	font-family: "Roboto Slab", serif;
+	font-size: 36px;
+	text-align: center;
+	margin: 10px 0 50px;
+}
+.forwho__item {
+	text-align: center;
+}
+.forwho__item__img {
+	width: 270px;
+	height: 270px;
+}
+.forwho__item__img img {
+	width: 100%;
+	height: auto;
+}
+.forwho__item__title {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 24px;
+	margin: 35px 0 22px;
+}
+.forwho__item__text {
+	font-size: 16px;
+	line-height: 20px;
+}
+.forwho__sidebar {
+	background-color: #fff;
+	text-align: center;
+	padding: 0 4px;
+}
+.forwho__sidebar__title {
+	color: #f16449;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 23px;
+	text-transform: uppercase;
+	padding: 25px 0 19px;
+	border-bottom: 3px dotted #d2ccbd;
+}
+.forwho__sidebar__title__sub {
+	font-size: 18px;
+	line-height: 20px;
+}
+.forwho__sidebar__item {
+	padding: 12px 0 23px;
+	border-bottom: 3px dotted #d2ccbd;
+}
+.forwho__sidebar__item:last-child {
+	border-bottom: none;
+}
+.forwho__sidebar__item__icon {
+	margin: 0 auto 11px;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+}
+.forwho__sidebar__item__icon.calendar {
+	width: 42px;
+	height: 40px;
+	background-position: -531px 0px;
+}
+.forwho__sidebar__item__icon.clock {
+	width: 40px;
+	height: 40px;
+	background-position: -574px 0px;
+	margin-top: 3px;
+}
+.forwho__sidebar__item__icon.laptop {
+	width: 50px;
+	height: 34px;
+	background-position: -615px 0px;
+	margin-top: 12px;
+}
+.forwho__sidebar__item__iconsubtext {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.forwho__sidebar__item__value {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 5px;
+	position: relative;
+}
+.forwho__sidebar__item__value__sub {
+	font-size: 24px;
+}
+.forwho__sidebar__item__value__imglogo {
+	width: 181px;
+	height: 25px;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	background-position: 0px -420px;
+	margin: 21px auto 6px;
+}
+.forwho__sidebar__item__value__imglogo:hover {
+	background-position: -182px -420px;
+}
+.forwho__sidebar__item__value__imgicon {
+	width: 17px;
+	height: 17px;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	background-position: -666px 0px;
+	cursor: pointer;
+	position: absolute;
+	right: 13px;
+	top: -7px;
+}
+.forwho__sidebar__item__value__imgicon:hover {
+	background-position: -684px 0px;
+}
+.forwho__sidebar__item__value__helper {
+	display: none;
+	border: 1px solid #33c7b0;
+	background-color: #fff;
+	color: #282a2c;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: normal;
+	text-align: center;
+	padding: 13px 9px 9px;
+	width: 228px;
+	position: absolute;
+	top: -92px;
+	left: 50%;
+	margin-left: -114px;
+}
+.forwho__sidebar__item__value__helper:after {
+	content: "";
+	display: block;
+	width: 17px;
+	height: 12px;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	background-position: -702px 0px;
+	position: absolute;
+	bottom: -12px;
+	right: 6px;
+}
+.features {
+	color: #282a2c;
+	padding: 44px 0 70px;
+	background-image: url(../img/features-bg.png);
+	background-repeat: repeat;
+}
+.features__title {
+	font-family: "Roboto Slab", serif;
+	font-size: 36px;
+	text-align: center;
+	margin: 0 0 59px;
+}
+.features__item {}
 
 
 .popup {
