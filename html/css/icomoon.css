@@ -33,7 +33,7 @@
 .icon-arrow-up:before {
     content: "\e902";
 }
-.icon--arrow-left:before {
+.icon-arrow-left:before {
     content: "\e903";
 }
 .icon-arrow-right:before {

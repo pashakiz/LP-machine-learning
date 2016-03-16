@@ -14,6 +14,20 @@ $(document).ready(function() {
 		$(".forwho__sidebar__item__value__helper").hide();
 	});
 
+	//show/hide more programm
+	$(".programm__course.expand").find(".programm__course__more").show(); //init
+	$(".programm__course__bth-more").on("click", function () {
+		var el_parent = $(this).parent(),
+			el_more = $(this).parent().find(".programm__course__more");
+		if ( el_parent.hasClass("expand") ) {
+			el_parent.removeClass("expand");
+			el_more.slideUp();
+		} else {
+			el_parent.addClass("expand");
+			el_more.slideDown();
+		}
+	});
+
 	//Placeholder
 	//Doc: https://github.com/NV/placeholder.js/
 	$("[placeholder]").textPlaceholder();
@@ -57,7 +71,31 @@ $(document).ready(function() {
 
 	//Каруселька
 	//Документация: http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html
-	$(".carousel").owlCarousel();
+	$(".reviews__slider").owlCarousel({
+		margin: 30,
+		items : 3,
+		loop: true,
+		nav : true,
+		navText : ['<i class="icon icon-arrow-left"></i>','<i class="icon icon-arrow-right"></i>'],
+		autoPlay : false,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			480 : {
+				items : 1
+			},
+			768 : {
+				items : 2
+			},
+			992 : {
+				items : 3
+			},
+			1199 : {
+				items : 3
+			}
+		}
+	});
 
 	//Кнопка "Наверх"
 	//Документация:

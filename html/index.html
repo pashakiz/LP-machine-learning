@@ -241,7 +241,7 @@
 			<div class="programm__title">Программа специализации</div>
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="programm__course">
+					<div class="programm__course expand">
 						<div class="programm__course__title clearfix">
 							<div class="programm__course__title__count">
 								<div class="programm__course__title__count__inner">
@@ -304,35 +304,217 @@
 								</ol>
 							</div>
 						</div>
-						<div class="programm__course__bth-more">bth-more</div>
-					</div>
+						<div class="programm__course__bth-more">
+							<div class="programm__course__bth-more__show">
+								<div class="programm__course__bth-more__label">Подробнее</div>
+								<div class="programm__course__bth-more__icon icon-arrow-down"></div>
+							</div>
+							<div class="programm__course__bth-more__hide">
+								<div class="programm__course__bth-more__icon icon-arrow-up"></div>
+								<div class="programm__course__bth-more__label">Свернуть</div>
+							</div>
+						</div>
+					</div><!-- .programm__course -->
+					<div class="programm__course">
+						<div class="programm__course__title clearfix">
+							<div class="programm__course__title__count">
+								<div class="programm__course__title__count__inner">
+									<div class="programm__course__title__count__value">2</div>
+									<div class="programm__course__title__count__title">курс</div>
+								</div>
+							</div>
+							<div class="programm__course__title__text">Обучение на размеченных данных</div>
+						</div>
+						<div class="programm__course__about">
+							<div class="programm__course__about__title">О курсе</div>
+							<p>Обучение на размеченных данных или обучение с учителем – это наиболее распространенный класс задач машинного обучения. К нему относятся те задачи, где нужно научиться предсказывать некоторую величину для любого объекта, имея конечное число примеров. Это может быть предсказание уровня пробок на участке дороги, определение возраста пользователя по его действиям в интернете, предсказание цены, по которой будет куплена подержанная машина.</p>
+							<p>В этом курсе вы научитесь формулировать и, конечно, решать такие задачи. В центре нашего внимания будут успешно применяемые на практике алгоритмы классификации и регрессии: линейные модели, нейронные сети, решающие деревья и так далее. Особый акцент мы сделаем на такой мощной технике как построение композиций, которая позволяет существенно повысить качество отдельных алгоритмов и широко используется при решении прикладных задач. В частности, мы узнаем про случайные леса и про метод градиентного бустинга.</p>
+							<p>Построение предсказывающих алгоритмов — это лишь часть работы при решении задачи анализа данных. Мы разберемся и с другими этапами: оценивание обобщающей способности алгоритмов, подбор параметров модели, выбор и подсчет метрик качества..</p>
+						</div>
+						<div class="programm__course__more">
+							<div class="programm__course__more__inner">
+								<div class="programm__course__more__inner__title">Неделя</div>
+								<div class="programm__course__more__inner__text">Добро пожаловать! На этой неделе мы начнём осваивать язык Python — один из главных инструментов специалиста в науке о данных, и вспомним кое-что о производных, которые активно используются при настройке моделей машинного обучения.</div>
+								<ol class="programm__course__more__inner__list">
+									<li>
+										Урок “Добро пожаловать и кто мы”
+										<ol class="programm__course__more__inner__list__inner">
+											<li>Как прекрасны машинное обучение и анализ данных!</li>
+											<li>Как устроена эта специализация и как она навсегда изменит ваши жизни (особенно capstone project, несите деньги).</li>
+											<li>Как устроен этот курс: вспоминаем математику, плавно входим в питон</li>
+										</ol>
+									</li>
+									<li>
+										Урок “Питон, уровень 0”
+										<ol class="programm__course__more__inner__list__inner">
+											<li>Что такое Python и почему мы выбрали именно его. Почему второй питон</li>
+											<li>Как установить Анаконду (screencast, возможно 3 видео для разных OS)</li>
+											<li>Что такое ноутбуки и как ими пользоваться. (screencast)</li>
+										</ol>
+									</li>
+								</ol>
+								<div class="programm__course__more__inner__title">Неделя</div>
+								<div class="programm__course__more__inner__text">На этой неделе мы познакомимся с питоновскими библиотеками, содержащими большое количество полезных инструментов: от быстрых операций с многомерными массивами до визуализации и реализации различных математических методов. Кроме того, мы освоим линейную алгебру — основной математический аппарат для работы с данными: в большинстве задач данные можно представить в виде векторов или матриц.</div>
+								<ol class="programm__course__more__inner__list">
+									<li>
+										Урок “Знакомство с синтаксисом Питона”
+										<ol class="programm__course__more__inner__list__inner">
+											<li>Типы данных</li>
+											<li>Циклы, функции, генераторы, list comprehension</li>
+											<li>Чтение данных, open, кодировки, codecs (screencast)</li>
+											<li>Запись файлов, изменение файлов (screencast)</li>
+										</ol>
+									</li>
+									<li>
+										Урок “Библиотеки NumPy, Matplotlib, SciPy, Pandas”
+										<ol class="programm__course__more__inner__list__inner">
+											<li>Pandas part1 (screencast)</li>
+											<li>Pandas part2 (screencast)</li>
+											<li>NumPy: индексация и производительность</li>
+											<li>Построение графиков в Matplotlib</li>
+											<li>SciPy: беглое знакомство со списком модулей </li>
+										</ol>
+									</li>
+								</ol>
+							</div>
+						</div>
+						<div class="programm__course__bth-more">
+							<div class="programm__course__bth-more__show">
+								<div class="programm__course__bth-more__label">Подробнее</div>
+								<div class="programm__course__bth-more__icon icon-arrow-down"></div>
+							</div>
+							<div class="programm__course__bth-more__hide">
+								<div class="programm__course__bth-more__icon icon-arrow-up"></div>
+								<div class="programm__course__bth-more__label">Свернуть</div>
+							</div>
+						</div>
+					</div><!-- .programm__course -->
 				</div>
-			</div>
-		</div>
+			</div> <!-- .row -->
+		</div> <!-- .container -->
 	</section>
 	<section class="parners">
 		<div class="container">
 			<div class="parners__title">Партнёры</div>
+			<div class="row">
+				<div class="col-md-6">
+					<a class="parners__lnk mipt" href="#"></a>
+				</div>
+				<div class="col-md-6">
+					<a class="parners__lnk yandex" href="#"></a>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section class="infoparners">
 		<div class="container">
 			<div class="infoparners__title">Инфопартнёры</div>
-		</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="infoparners__lnk_container">
+						<a class="infoparners__lnk l1" href="#"></a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="infoparners__lnk_container">
+						<a class="infoparners__lnk l2" href="#"></a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="infoparners__lnk_container">
+						<a class="infoparners__lnk l3" href="#"></a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="infoparners__lnk_container">
+						<a class="infoparners__lnk l4" href="#"></a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="infoparners__lnk_container">
+						<a class="infoparners__lnk l5" href="#"></a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="infoparners__lnk_container">
+						<a class="infoparners__lnk l6" href="#"></a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="infoparners__lnk_container">
+						<a class="infoparners__lnk l7" href="#"></a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="infoparners__lnk_container">
+						<a class="infoparners__lnk l8" href="#"></a>
+					</div>
+				</div>
+			</div> <!-- .row -->
+		</div> <!-- .container -->
 	</section>
 	<section class="reviews">
 		<div class="container">
-			<div class="reviews__title">Отзывы</div>
-		</div>
+			<div class="row">
+				<div class="reviews__title">Отзывы о курсе</div>
+				<div class="reviews__slider clearfix">
+					<div class="reviews__slider__item">
+						<div class="reviews__slider__item__title">Повседневная практика показывает укрепление и развитие структуры в значительной степени</div>
+						<div class="reviews__slider__item__text">Таким образом консультация с широким активом представляет собой интересный эксперимент проверки систем массового участия. Идейные соображения высшего порядка, а также сложившаяся структура организации позволяется оценить значение системы обучения кадров, соответствует насущным проблемам.</div>
+						<div class="reviews__slider__item__name">Константин<br>Константинопольский</div>
+						<div class="reviews__slider__item__post">ведущий программист</div>
+					</div>
+					<div class="reviews__slider__item">
+						<div class="reviews__slider__item__title">Идейные соображения высшего порядка, а также консультация с широким активом</div>
+						<div class="reviews__slider__item__text">Повседневная практика показывает, что укрепление и развитие структуры в значительной степени обуславливает создание форм развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки систем массового участия.</div>
+						<div class="reviews__slider__item__name">Герасим Вениаминович</div>
+						<div class="reviews__slider__item__post">директор “Диктатор групп”</div>
+					</div>
+					<div class="reviews__slider__item">
+						<div class="reviews__slider__item__title">Разнообразный и богатый опыт реализации намеченных планов</div>
+						<div class="reviews__slider__item__text">Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в формировании систем массового участия. Разнообразный и богатый опыт реализации намеченных планов и заданий в значительной степени обуславливает создание модели развития.</div>
+						<div class="reviews__slider__item__name">Генадий Федорович</div>
+						<div class="reviews__slider__item__post">IT-специалист</div>
+					</div>
+					<div class="reviews__slider__item">
+						<div class="reviews__slider__item__title">Повседневная практика показывает укрепление и развитие структуры в значительной степени</div>
+						<div class="reviews__slider__item__text">Таким образом консультация с широким активом представляет собой интересный эксперимент проверки систем массового участия. Идейные соображения высшего порядка, а также сложившаяся структура организации позволяется оценить значение системы обучения кадров, соответствует насущным проблемам.</div>
+						<div class="reviews__slider__item__name">Константин Константинопольский</div>
+						<div class="reviews__slider__item__post">ведущий программист</div>
+					</div>
+					<div class="reviews__slider__item">
+						<div class="reviews__slider__item__title">Идейные соображения высшего порядка, а также консультация с широким активом</div>
+						<div class="reviews__slider__item__text">Повседневная практика показывает, что укрепление и развитие структуры в значительной степени обуславливает создание форм развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки систем массового участия.</div>
+						<div class="reviews__slider__item__name">Герасим Вениаминович</div>
+						<div class="reviews__slider__item__post">директор “Диктатор групп”</div>
+					</div>
+					<div class="reviews__slider__item">
+						<div class="reviews__slider__item__title">Разнообразный и богатый опыт реализации намеченных планов</div>
+						<div class="reviews__slider__item__text">Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в формировании систем массового участия. Разнообразный и богатый опыт реализации намеченных планов и заданий в значительной степени обуславливает создание модели развития.</div>
+						<div class="reviews__slider__item__name">Генадий Федорович</div>
+						<div class="reviews__slider__item__post">IT-специалист</div>
+					</div>
+				</div> <!-- .reviews__slider -->
+			</div>
+		</div> <!-- .container -->
 	</section>
 	<section class="bottom">
 		<div class="container">
-			<div class="bottom__title"></div>
-		</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="bottom__item">
+						<div class="bottom__item__title">Стоимость и информация<br>о получении дотации</div>
+					</div> <!-- .bottom__item -->
+					<div class="bottom__item">
+						<div class="bottom__item__title">Финансовая помощь</div>
+					</div> <!-- .bottom__item -->
+				</div>
+			</div> <!-- .row -->
+		</div> <!-- .container -->
 	</section>
 
 	<footer>
-		<div class="container">footer</div>
+		<div class="container"></div>
 	</footer>
 	<div id="form" class="popup">
 		form

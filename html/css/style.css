@@ -455,7 +455,7 @@ header.header {
 	padding: 0 24px;
 }
 .programm {
-	padding: 55px 0 70px;
+	padding: 55px 0 94px;
 	background-color: #cbdddd;
 	background-image: url(../img/pattern.png);
 	background-repeat: repeat;
@@ -466,7 +466,10 @@ header.header {
 	text-align: center;
 	margin: 0 0 52px;
 }
-.programm__course {}
+.programm__course {
+	border-bottom: 3px solid #b0c8c8;
+	margin-bottom: 30px;
+}
 .programm__course__title {}
 .programm__course__title__count {
 	float: left;
@@ -525,6 +528,7 @@ header.header {
 	padding-bottom: 10px;
 }
 .programm__course__more {
+	display: none;
 	background-color: #fff;
 	padding: 0 70px 0;
 }
@@ -577,14 +581,167 @@ header.header {
 	line-height: 25px;
 	font-weight: normal;
 }
-
 .programm__course__bth-more {
+	color: #64686c;
 	background-color: #fff;
 	text-align: center;
+	padding: 23px 0 30px 0;
+	cursor: pointer;
 }
-
+.programm__course__bth-more__show {
+	display: block;
+}
+.programm__course__bth-more__hide {
+	display: none;
+}
+.programm__course.expand .programm__course__bth-more__show {
+	display: none;
+}
+.programm__course.expand .programm__course__bth-more__hide {
+	display: block;
+}
+.programm__course__bth-more__icon {
+	font-size: 9px;
+}
+.programm__course__bth-more__show .programm__course__bth-more__icon {
+	margin-bottom: 0;
+}
+.programm__course__bth-more__hide .programm__course__bth-more__icon {
+	margin-bottom: 14px;
+}
+.programm__course__bth-more__label {
+	font-size: 12px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.programm__course__bth-more__hide .programm__course__bth-more__label {
+	margin-bottom: 0;
+}
+.programm__course__bth-more__show .programm__course__bth-more__label {
+	margin-bottom: 14px;
+}
+.parners {
+	padding: 44px 0 104px;
+	background-color: #fff;
+}
+.parners__title {
+	font-family: "Roboto Slab", serif;
+	font-size: 36px;
+	text-align: center;
+	margin: 0 0 75px;
+}
+.parners__lnk {
+	display: block;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	margin: 0 0 0 205px;
+}
+.parners__lnk.mipt {
+	width: 301px;
+	height: 90px;
+	background-position: -176px -64px;
+}
+.parners__lnk.yandex {
+	width: 201px;
+	height: 80px;
+	background-position: -477px -64px;
+	margin: 5px 0 0 114px;
+}
+.infoparners {
+	padding: 44px 0 34px;
+	background-color: #dae6e7;
+}
+.infoparners__title {
+	font-family: "Roboto Slab", serif;
+	font-size: 36px;
+	text-align: center;
+	margin: 0 0 46px;
+}
+.infoparners__lnk_container {
+	width: 170px;
+	height: 122px;
+	padding: 1px 0;
+	margin: 24px auto 24px;
+}
+.infoparners__lnk {
+	display: block;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
+.infoparners__lnk.l1 {
+	width: 120px;
+	height: 58px;
+	background-position: 0px -176px;
+	margin-top: 40px;
+}
+.infoparners__lnk.l1:hover {
+	background-position: -121px -176px;
+}
+.infoparners__lnk.l2 {
+	width: 150px;
+	height: 30px;
+	background-position: -242px -176px;
+	margin-top: 52px;
+}
+.infoparners__lnk.l2:hover {
+	background-position: -242px -207px;
+}
+.infoparners__lnk.l3 {
+	width: 120px;
+	height: 120px;
+	background-position: -393px -176px;
+}
+.infoparners__lnk.l3:hover {
+	background-position: -514px -176px;
+}
+.infoparners__lnk.l4 {
+	width: 150px;
+	height: 30px;
+	background-position: -0px -264px;
+	margin-top: 44px;
+}
+.infoparners__lnk.l4:hover {
+	background-position: -151px -264px;
+}
+.infoparners__lnk.l5 {
+	width: 120px;
+	height: 122px;
+	background-position: -0px -295px;
+}
+.infoparners__lnk.l5:hover {
+	background-position: -121px -295px;
+}
+.infoparners__lnk.l6 {
+	width: 120px;
+	height: 102px;
+	background-position: -242px -297px;
+	margin-top: 7px;
+}
+.infoparners__lnk.l6:hover {
+	background-position: -363px -297px;
+}
+.infoparners__lnk.l7 {
+	width: 170px;
+	height: 25px;
+	background-position: -0px -238px;
+	margin-top: 48px;
+}
+.infoparners__lnk.l7:hover {
+	background-position: -171px -238px;
+}
+.infoparners__lnk.l8 {
+	width: 120px;
+	height: 86px;
+	background-position: -484px -297px;
+	margin-top: 7px;
+}
+.infoparners__lnk.l8:hover {
+	background-position: -605px -297px;
+}
 .reviews {
-	padding: 44px 0 70px;
+	padding: 44px 0 110px;
 	background-color: #3598db;
 	background-image: url(../img/pattern.png);
 	background-repeat: repeat;
@@ -594,41 +751,93 @@ header.header {
 	font-family: "Roboto Slab", serif;
 	font-size: 36px;
 	text-align: center;
-	margin: 0 0 59px;
+	margin: 0 0 49px;
 }
-.parners {
-	padding: 44px 0 70px;
+.reviews__slider {}
+.reviews__slider__item {
+	width: 370px;
+	height: 407px;
+	padding: 35px 40px 23px;
 	background-color: #fff;
+	border-bottom: 3px solid #3d7cc9;
 }
-.parners__title {
-	font-family: "Roboto Slab", serif;
-	font-size: 36px;
-	text-align: center;
-	margin: 0 0 59px;
+.reviews__slider__item__title {
+	font-size: 14px;
+	line-height: 23px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 19px;
 }
-.infoparners {
-	padding: 44px 0 70px;
-	background-color: #dae6e7;
+.reviews__slider__item__text {
+	font-size: 14px;
+	line-height: 20px;
 }
-.infoparners__title {
-	font-family: "Roboto Slab", serif;
-	font-size: 36px;
-	text-align: center;
-	margin: 0 0 59px;
+.reviews__slider__item__name {
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: bold;
+	margin-top: 24px;
+	margin-bottom: 6px;
 }
+.reviews__slider__item__post {
+	font-size: 13px;
+}
+.owl-controls .owl-nav {
+	font-size: 40px;
+	line-height: 40px;
+	color: #72b7e6;
+	position: absolute;
+	left: 50%;
+	margin-top: 35px;
+	margin-left: -140px;
+}
+.owl-controls .owl-nav div .icon {
+	position: relative;
+}
+.owl-controls .owl-nav div .icon:hover {
+	color: #fff;
+	text-shadow: 0px 3px 0px rgba(61, 124, 201, 1);
+	top: -3px;
+}
+.owl-controls .owl-nav div .icon:active {
+	color: #fff;
+	text-shadow: none;
+	top: 0;
+}
+.owl-controls .owl-nav .owl-prev {
+	float: left;
+	margin-right: 230px;
+}
+.owl-controls .owl-nav .owl-next {
+	float: left;
+}
+
+
 .bottom {
-	padding: 44px 0 70px;
+	background-color: #eff0f4;
+	background-image: url(../img/bottom-bg.png);
+	background-repeat: no-repeat;
+	background-position: 0 98px;
+	background-size: cover;
+	padding: 50px 0 0 0;
 }
-.bottom__title {
+.bottom__item {
+	background-color: #fff;
+	border-bottom: 3px solid #d4d7d7;
+	margin-bottom: 30px;
+	padding: 47px 50px 47px;
+}
+.bottom__item__title {
 	font-family: "Roboto Slab", serif;
 	font-size: 36px;
+	line-height: 60px;
 	text-align: center;
 	margin: 0 0 59px;
 }
 
 footer {
 	background-color: #282a2c;
-	line-height: 15px;
+	height: 15px;
 }
 .popup {
 	display: none;
