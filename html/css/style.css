@@ -35,8 +35,30 @@ body {
 }
 header.header {
 	background-color: #36383b;
-	height: 80px;
-	padding: 14px 0;
+	padding: 14px 0 16px 0;
+}
+.header .btn-nav-toggle {
+	float: right;
+	margin: 10px;
+	padding: 9px 10px;
+	background-color: transparent;
+	border: 1px solid #5a5a5a;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.header .btn-nav-toggle .icon-bar {
+	background-color: #5a5a5a;
+	display: block;
+	width: 22px;
+	height: 2px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+}
+.header .btn-nav-toggle .icon-bar + .icon-bar {
+	margin-top: 4px;
 }
 .header .logo {
 	float: left;
@@ -61,6 +83,7 @@ header.header {
 	color: #5a5a5a;
 }
 .header .nav {
+	display: none;
 	float: right;
 	margin: 0;
 	padding: 0;
@@ -85,7 +108,8 @@ header.header {
 	background-color: #46474b;
 	color: #c8cdd1;
 }
-.header .nav .nav-item .nav-item-lnk:active {
+.header .nav .nav-item .nav-item-lnk:active,
+.header .nav .nav-item.active .nav-item-lnk {
 	background-color: #282a2c;
 	color: #fff;
 	border-color: #202224;
@@ -103,13 +127,13 @@ header.header {
 	text-align: center;
 }
 .first-screen__h1 {
-	margin-top: 97px;
+	margin-top: 60px;
 	font-family: "Roboto Slab", serif;
-	font-size: 60px;
+	font-size: 40px;
 }
 .first-screen__h2 {
 	margin-top: 20px;
-	font-size: 30px;
+	font-size: 24px;
 }
 .btn {
 	display: inline-block;
@@ -118,9 +142,9 @@ header.header {
 	font-size: 18px;
 	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: 4px;
 	line-height: 1;
-	padding: 30px 65px;
+	padding: 22px;
+	width: 100%;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
@@ -128,6 +152,7 @@ header.header {
 	-moz-box-shadow:    0px 5px 0px 0px rgba(232, 188, 12, 1);
 	box-shadow:         0px 5px 0px 0px rgba(232, 188, 12, 1);
 	position: relative;
+	text-align: center;
 }
 .btn:hover {
 	background-color: #fff000;
@@ -192,10 +217,12 @@ header.header {
 }
 .forwho__item {
 	text-align: center;
+	margin-bottom: 40px;
 }
 .forwho__item__img {
 	width: 270px;
 	height: 270px;
+	margin: 0 auto;
 }
 .forwho__item__img img {
 	width: 100%;
@@ -274,15 +301,16 @@ header.header {
 	font-size: 24px;
 }
 .forwho__sidebar__item__value__imglogo {
+	display: block;
 	width: 181px;
 	height: 25px;
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-position: 0px -420px;
+	background-position: -176px -155px;
 	margin: 21px auto 6px;
 }
 .forwho__sidebar__item__value__imglogo:hover {
-	background-position: -182px -420px;
+	background-position: -358px -155px;
 }
 .forwho__sidebar__item__value__imgicon {
 	width: 17px;
@@ -345,10 +373,9 @@ header.header {
 	box-shadow:         6px 6px 0px 0px rgba(194, 142, 42, 0.4);
 	padding: 25px 50px 31px;
 	margin-bottom: 30px;
-	height: 280px;
 }
 .features__item.wide {
-	padding: 67px 100px 50px;
+	padding: 100px 50px 50px;
 	margin-bottom: 0;
 	position: relative;
 }
@@ -470,15 +497,13 @@ header.header {
 	border-bottom: 3px solid #b0c8c8;
 	margin-bottom: 30px;
 }
-.programm__course__title {}
-.programm__course__title__count {
-	float: left;
-	width: 45px;
-	height: 110px;
-	background-image: url(../img/sprite.png);
-	background-repeat: no-repeat;
-	background-position: -679px -18px;
+.programm__course__title {
 	position: relative;
+	padding: 110px 0 30px 0;
+	background-color: #fff;
+}
+.programm__course__title__count {
+	background-color: #fff;
 }
 .programm__course__title__count__inner {
 	width: 70px;
@@ -490,8 +515,9 @@ header.header {
 	-moz-border-radius: 35px;
 	border-radius: 35px;
 	position: absolute;
-	top: 30px;
-	left: -35px;
+	top: 25px;
+	left: 50%;
+	margin-left: -35px;
 	padding-top: 11px;
 	text-align: center;
 }
@@ -504,18 +530,16 @@ header.header {
 	font-size: 14px;
 }
 .programm__course__title__text {
-	float: left;
 	background-color: #fff;
 	font-family: "Roboto Slab", serif;
-	height: 110px;
-	font-size: 28px;
-	padding: 46px 25px 0;
-	width: 900px;
+	font-size: 25px;
+	padding: 0 15px;
+	text-align: center;
 }
 .programm__course__about {
 	background-color: #fff;
 	color: #64686c;
-	padding: 0 70px 45px;
+	padding: 0 15px 45px;
 }
 .programm__course__about__title {
 	margin-bottom: 11px;
@@ -530,7 +554,7 @@ header.header {
 .programm__course__more {
 	display: none;
 	background-color: #fff;
-	padding: 0 70px 0;
+	padding: 0 15px 0;
 }
 .programm__course__more__inner {
 	padding: 20px 0;
@@ -634,7 +658,7 @@ header.header {
 	display: block;
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	margin: 0 0 0 205px;
+	margin: 0 auto 0;
 }
 .parners__lnk.mipt {
 	width: 301px;
@@ -645,7 +669,7 @@ header.header {
 	width: 201px;
 	height: 80px;
 	background-position: -477px -64px;
-	margin: 5px 0 0 114px;
+	margin: 30px auto 0;
 }
 .infoparners {
 	padding: 44px 0 34px;
@@ -673,72 +697,72 @@ header.header {
 .infoparners__lnk.l1 {
 	width: 120px;
 	height: 58px;
-	background-position: 0px -176px;
+	background-position: -363px -269px;
 	margin-top: 40px;
 }
 .infoparners__lnk.l1:hover {
-	background-position: -121px -176px;
+	background-position: -363px -328px;
 }
 .infoparners__lnk.l2 {
 	width: 150px;
 	height: 30px;
-	background-position: -242px -176px;
+	background-position: -363px -207px;
 	margin-top: 52px;
 }
 .infoparners__lnk.l2:hover {
-	background-position: -242px -207px;
+	background-position: -514px -207px;
 }
 .infoparners__lnk.l3 {
 	width: 120px;
 	height: 120px;
-	background-position: -393px -176px;
+	background-position: 0px -181px;
 }
 .infoparners__lnk.l3:hover {
-	background-position: -514px -176px;
+	background-position: -121px -181px;
 }
 .infoparners__lnk.l4 {
 	width: 150px;
 	height: 30px;
-	background-position: -0px -264px;
+	background-position: -363px -238px;
 	margin-top: 44px;
 }
 .infoparners__lnk.l4:hover {
-	background-position: -151px -264px;
+	background-position: -514px -238px;
 }
 .infoparners__lnk.l5 {
 	width: 120px;
 	height: 122px;
-	background-position: -0px -295px;
+	background-position: -0px -302px;
 }
 .infoparners__lnk.l5:hover {
-	background-position: -121px -295px;
+	background-position: -121px -302px;
 }
 .infoparners__lnk.l6 {
 	width: 120px;
 	height: 102px;
-	background-position: -242px -297px;
+	background-position: -242px -181px;
 	margin-top: 7px;
 }
 .infoparners__lnk.l6:hover {
-	background-position: -363px -297px;
+	background-position: -242px -284px;
 }
 .infoparners__lnk.l7 {
 	width: 170px;
 	height: 25px;
-	background-position: -0px -238px;
+	background-position: -363px -181px;
 	margin-top: 48px;
 }
 .infoparners__lnk.l7:hover {
-	background-position: -171px -238px;
+	background-position: -534px -181px;
 }
 .infoparners__lnk.l8 {
 	width: 120px;
 	height: 86px;
-	background-position: -484px -297px;
+	background-position: -484px -269px;
 	margin-top: 7px;
 }
 .infoparners__lnk.l8:hover {
-	background-position: -605px -297px;
+	background-position: -605px -269px;
 }
 .reviews {
 	padding: 44px 0 110px;
@@ -755,11 +779,11 @@ header.header {
 }
 .reviews__slider {}
 .reviews__slider__item {
-	width: 370px;
-	height: 407px;
+	width: 300px;
 	padding: 35px 40px 23px;
 	background-color: #fff;
 	border-bottom: 3px solid #3d7cc9;
+	margin: 0 auto;
 }
 .reviews__slider__item__title {
 	font-size: 14px;
@@ -816,29 +840,102 @@ header.header {
 .bottom {
 	background-color: #eff0f4;
 	background-image: url(../img/bottom-bg.png);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-position: 0 98px;
-	background-size: cover;
+	background-size: contain;
 	padding: 50px 0 0 0;
 }
 .bottom__item {
 	background-color: #fff;
 	border-bottom: 3px solid #d4d7d7;
 	margin-bottom: 30px;
-	padding: 47px 50px 47px;
+	padding: 47px 15px 52px;
 }
 .bottom__item__title {
 	font-family: "Roboto Slab", serif;
-	font-size: 36px;
-	line-height: 60px;
+	font-size: 30px;
+	line-height: 40px;
 	text-align: center;
-	margin: 0 0 59px;
+	margin: 0 0 33px;
 }
+.bottom__item__subtitle {
+	font-size: 18px;
+	line-height: 23px;
+	color: #f16449;
+	text-align: center;
+	margin-bottom: 37px;
+}
+.bottom__item__pricelist {
+	margin: 0;
+	padding: 0;
+}
+.bottom__item__pricelist__row {
+	list-style: none;
+	display: block;
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 25px;
+}
+.bottom__item__pricelist__row:last-child {
+	color: #f16449;
+}
+.bottom__item__pricelist__item {
+	float: left;
+}
+.bottom__item__pricelist__price {
+	float: right;
+	text-align: right;
+	font-size: 24px;
+	font-weight: bold;
+}
+.bottom__item__pricelist__price.small {
+	font-size: 18px;
+}
+.rub {
+	font-weight: normal;
+}
+.bottom__item__bottomtext {
+	padding: 3px 0 0;
+	font-size: 15px;
+	line-height: 20px;
+}
+.redbold {
+	color: #ff5231;
+	font-weight: bold;
+}
+.bottom__item__btn-bottom__container {
+	text-align: center;
+}
+.bottom__item__btn-bottom {
+	margin: 39px auto 0;
+}
+.bottom__item__btn-bottom-coursera {
+	margin: 0 auto 50px;
+}
+.bottom__item__btn__img {
+	width: 181px;
+	height: 25px;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	background-position: -540px -155px;
+	margin: 0 auto;
+}
+.bottom__item__text {
+	color: #64686c;
+	font-size: 14px;
+	line-height: 22px;
+}
+.bottom__item__text a {
+	color: #ff5332;
+	text-decoration: underline;
+}
+.bottom__item__text a:hover {
+	text-decoration: none;
+}
+
+
 
 footer {
 	background-color: #282a2c;
 	height: 15px;
-}
-.popup {
-	display: none;
 }

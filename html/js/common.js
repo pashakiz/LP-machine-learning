@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+	// show/hide menu nav in mobile view
+	$(".btn-nav-toggle").on("click", function(event) {
+		if(document.documentElement.clientWidth < 992) {
+			$("ul.nav").toggleClass("show");
+		}
+	});
+
 	//Hover for .forwho__sidebar__item__value__helper
 	$(".forwho__sidebar__item__value__helper").on("mouseenter", function () {
 		$(this).show();
@@ -30,26 +37,26 @@ $(document).ready(function() {
 
 	//Placeholder
 	//Doc: https://github.com/NV/placeholder.js/
-	$("[placeholder]").textPlaceholder();
+	//$("[placeholder]").textPlaceholder();
 
 	//Parallax (Stellar)
 	//Документация: http://markdalgleish.com/projects/stellar.js/docs/
 	//<div class="image" data-stellar-background-ratio="0">...</div>
-	$.stellar({
-		horizontalScrolling: false,
-		verticalOffset: 0
-	});
+	// $.stellar({
+	// 	horizontalScrolling: false,
+	// 	verticalOffset: 0
+	// });
 	
 	//Попап менеджер FancyBox
 	//Документация: http://fancyapps.com/fancybox/
 	//<a class="fancybox" rel="group" href="big_image_1.jpg"><img src="small_image_1.jpg" alt="" /></a>
 	//<a class="fancybox" rel="group" href="big_image_2.jpg"><img src="small_image_2.jpg" alt="" /></a>
-	$(".fancybox").fancybox();
+	//$(".fancybox").fancybox();
 
 	//Навигация по Landing Page
 	//$(".top_mnu") - это верхняя панель со ссылками.
 	//Ссылки вида <a href="#contacts">Контакты</a>
-	$(".top_mnu").navigation();
+	$(".nav").navigation();
 
 	//Добавляет классы дочерним блокам .block для анимации
 	//Документация: http://imakewebthings.com/jquery-waypoints/
@@ -80,6 +87,7 @@ $(document).ready(function() {
 		autoPlay : false,
 		responsive : {
 			0 : {
+				margin: 0,
 				items : 1
 			},
 			480 : {
@@ -89,6 +97,7 @@ $(document).ready(function() {
 				items : 2
 			},
 			992 : {
+				margin: 30,
 				items : 3
 			},
 			1199 : {
