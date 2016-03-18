@@ -5,7 +5,7 @@
 
 ##/wp_root/
 Папка с WordPress и БД.<br>
-Путь к папке с темой: `/wp-content/themes/epixx`<br>
+Путь к папке с темой: `/wp-content/themes/lubus`<br>
 
 В файле <b>wp-config.php</b> нужно прописать доступ к БД (см. <b>wp-config-sample.php</b>)<br>
 
