@@ -11,6 +11,6 @@
 
 Аккаунт к WP:<br>
 `editor`<br>
-`WPasS`<br>
+`wp_machinelad`<br>
 
 Версия: `WordPress 4.4.2`<br>
