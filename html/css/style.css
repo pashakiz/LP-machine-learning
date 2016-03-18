@@ -26,6 +26,9 @@ body textarea:required:valid {
 html, body {
 	height: 100%;
 }
+.col-custom {
+	width: 100%;
+}
 body {
 	font-family: "Open Sans", sans-serif;
 	/*font-family: 'Roboto Slab', serif;*/
@@ -36,6 +39,7 @@ body {
 header.header {
 	background-color: #36383b;
 	padding: 14px 0 16px 0;
+	position: relative;
 }
 .header .btn-nav-toggle {
 	float: right;
@@ -84,14 +88,12 @@ header.header {
 }
 .header .nav {
 	display: none;
-	float: right;
-	margin: 0;
+	margin: 70px 0 0 0;
 	padding: 0;
+	text-align: center;
 }
 .header .nav .nav-item {
 	list-style: none;
-	float: left;
-	margin-right: 9px;
 }
 .header .nav .nav-item:last-child {
 	margin-right: 0;
@@ -102,7 +104,7 @@ header.header {
 	font-size: 15px;
 	border: 1px solid transparent;
 	background-color: transparent;
-	padding: 15px 50px 18px 50px;
+	padding: 15px 50px 18px;
 }
 .header .nav .nav-item .nav-item-lnk:hover {
 	background-color: #46474b;
@@ -174,6 +176,7 @@ header.header {
 	margin-bottom: 15px;
 }
 .first-screen__social {
+	display: inline-block;
 	color: #282a2c;
 	background-color: #fff;
 	padding: 12px 26px 12px 14px;
@@ -243,6 +246,7 @@ header.header {
 	background-color: #fff;
 	text-align: center;
 	padding: 0 4px;
+	margin-top: 30px;
 }
 .forwho__sidebar__title {
 	color: #f16449;
