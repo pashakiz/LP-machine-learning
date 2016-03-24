@@ -32,7 +32,7 @@
 				<li class="nav-item"><a class="nav-item-lnk" href="#forwho">Для кого этот курс</a></li>
 				<li class="nav-item"><a class="nav-item-lnk" href="#lectors">Авторы</a></li>
 				<li class="nav-item"><a class="nav-item-lnk" href="#programm">Программа курса</a></li>
-				<li class="nav-item"><a class="nav-item-lnk" href="#firstscreen">Записаться на курс</a></li>
+				<li class="nav-item"><a class="nav-item-lnk btn-on-fixed" href="#bottom">Записаться на курс</a></li>
 			</ul>
 		</div>
 	</header>
@@ -45,9 +45,9 @@
 				<div class="col-lg-3 col-lg-offset-9">
 					<div class="first-screen__social">
 						<div class="first-screen__social__title">Поделиться:</div>
-						<a href="https://facebook.com/" target="_blank"><i class="icon-facebook"></i></a>
-						<a href="https://twitter.com/" target="_blank"><i class="icon-twitter"></i></a>
-						<a href="http://vk.com/" target="_blank"><i class="icon-vk"></i></a>
+						<a href="http://www.facebook.com/sharer/sharer.php?s=100&p%5Btitle%5D=Машинное обучение и анализ данных&p%5Bsummary%5D=DESC&p%5Burl%5D=http://artsovet.info/site/machine/&p%5Bimages%5D%5B0%5D=http://artsovet.info/site/machine/img/firstscreen-bg.png" target="_blank"><i class="icon-facebook"></i></a>
+						<a href="https://twitter.com/intent/tweet?text=Машинное обучение и анализ данных&amp;url=http://artsovet.info/site/machine/" target="_blank"><i class="icon-twitter"></i></a>
+						<a href="http://vk.com/share.php?url=http://artsovet.info/site/machine/&amp;title=Машинное обучение и анализ данных&amp;description=Стань специалистом мирового уровня&amp;image=http://artsovet.info/site/machine/img/firstscreen-bg.png&amp;noparse=true" target="_blank"><i class="icon-vk"></i></a>
 					</div>
 				</div>
 			</div>
@@ -105,7 +105,7 @@
 							<div class="forwho__sidebar__item__icon laptop"></div>
 							<div class="forwho__sidebar__item__iconsubtext">Место проведения</div>
 							<div class="forwho__sidebar__item__value">
-								<a class="forwho__sidebar__item__value__imglogo" href="http://www.coursera.org/" target="_blank"></a>
+								<div class="forwho__sidebar__item__value__imglogo" href="http://www.coursera.org/" target="_blank"></a>
 								<div class="forwho__sidebar__item__value__imgicon"></div>
 								<div class="forwho__sidebar__item__value__helper">Coursera.org - платформа онлайн-обучения от ведущих мировых университетов</div>
 							</div>
@@ -184,7 +184,7 @@
 				<div class="col-md-4">
 					<div class="lectors__item">
 						<div class="lectors__item__photo">
-							<img src="img/lector1.png" alt="name">
+							<img src="img/lector1.jpg" alt="name">
 						</div>
 						<div class="lectors__item__name">Константин Воронцов</div>
 						<div class="lectors__item__about">доктор физико-математических наук, профессор РАН, заведующий отделом Интеллектуальных систем ФИЦ ИУ РАН, преподаватель ШАД</div>
@@ -193,7 +193,7 @@
 				<div class="col-md-4">
 					<div class="lectors__item">
 						<div class="lectors__item__photo">
-							<img src="img/lector2.png" alt="name">
+							<img src="img/lector2.jpg" alt="name">
 						</div>
 						<div class="lectors__item__name">Вадим Стрижов</div>
 						<div class="lectors__item__about">доктор физико-математических наук, доцент МФТИ, ведущий научный сотрудник ФИЦ ИУ РАН</div>
@@ -257,55 +257,15 @@
 						</div>
 						<div class="programm__course__about">
 							<div class="programm__course__about__title">О курсе</div>
-							<p>Анализ данных и машинное обучение существенно опираются на результаты из математического анализа, линейной алгебры, методов оптимизации, теории вероятностей. Без фундаментальных знаний по этим наукам невозможно понимать, как устроены методы анализа данных. Данный курс направлен на то, чтобы сформировать этот фундамент. Мы обойдёмся без сложных формул и доказательств и сделаем упор на интерпретации и понимании смысла математических понятий и объектов.</p>
-							<p>Для успешного применения методов анализа данных нужно уметь программировать. Фактическим стандартом для этого в наши дни является язык Python. В данном курсе мы предлагаем познакомиться с его синтаксисом, а также научиться работать с его основными библиотеками, полезными для анализа данных.</p>
-							<p>В этом курсе вы познакомитесь с фундаментальными математическими понятиями, необходимыми для анализа данных, и получите начальный навык программирования на Python. Курс состоит из двух больших частей. Первая часть курса – практическая, она посвящена языку программирования Python. Вы познакомитесь с синтаксисом и идеологией языка, научитесь писать простые программы. Также вы узнаете о библиотеках, которые часто применяются на практике для анализе данных, например, NumPy, SciPy, Matplotlib и Pandas. Вторая часть курса посвящена таким разделам математики как линейная алгебра, математический анализ, методы оптимизации и теория вероятностей. При этом, упор делается на разъяснение математических понятий и их применение на практике, а не на вывод сложных формул и доказательство теорем.</p>
+							<p>Анализ данных и машинное обучение опираются на результаты из математического анализа, линейной алгебры и теории вероятностей. Без фундаментальных знаний по этим наукам невозможно понять методы анализа данных.</p>
+							<p>Первый курс сформирует этот фундамент. Мы без сложных формул и доказательств раскроем смысл математических понятий и объектов.</p>
 						</div>
 						<div class="programm__course__more">
 							<div class="programm__course__more__inner">
-								<div class="programm__course__more__inner__title">Неделя</div>
-								<div class="programm__course__more__inner__text">Добро пожаловать! На этой неделе мы начнём осваивать язык Python — один из главных инструментов специалиста в науке о данных, и вспомним кое-что о производных, которые активно используются при настройке моделей машинного обучения.</div>
-								<ol class="programm__course__more__inner__list">
-									<li>
-										Урок “Добро пожаловать и кто мы”
-										<ol class="programm__course__more__inner__list__inner">
-											<li>Как прекрасны машинное обучение и анализ данных!</li>
-											<li>Как устроена эта специализация и как она навсегда изменит ваши жизни (особенно capstone project, несите деньги).</li>
-											<li>Как устроен этот курс: вспоминаем математику, плавно входим в питон</li>
-										</ol>
-									</li>
-									<li>
-										Урок “Питон, уровень 0”
-										<ol class="programm__course__more__inner__list__inner">
-											<li>Что такое Python и почему мы выбрали именно его. Почему второй питон</li>
-											<li>Как установить Анаконду (screencast, возможно 3 видео для разных OS)</li>
-											<li>Что такое ноутбуки и как ими пользоваться. (screencast)</li>
-										</ol>
-									</li>
-								</ol>
-								<div class="programm__course__more__inner__title">Неделя</div>
-								<div class="programm__course__more__inner__text">На этой неделе мы познакомимся с питоновскими библиотеками, содержащими большое количество полезных инструментов: от быстрых операций с многомерными массивами до визуализации и реализации различных математических методов. Кроме того, мы освоим линейную алгебру — основной математический аппарат для работы с данными: в большинстве задач данные можно представить в виде векторов или матриц.</div>
-								<ol class="programm__course__more__inner__list">
-									<li>
-										Урок “Знакомство с синтаксисом Питона”
-										<ol class="programm__course__more__inner__list__inner">
-											<li>Типы данных</li>
-											<li>Циклы, функции, генераторы, list comprehension</li>
-											<li>Чтение данных, open, кодировки, codecs (screencast)</li>
-											<li>Запись файлов, изменение файлов (screencast)</li>
-										</ol>
-									</li>
-									<li>
-										Урок “Библиотеки NumPy, Matplotlib, SciPy, Pandas”
-										<ol class="programm__course__more__inner__list__inner">
-											<li>Pandas part1 (screencast)</li>
-											<li>Pandas part2 (screencast)</li>
-											<li>NumPy: индексация и производительность</li>
-											<li>Построение графиков в Matplotlib</li>
-											<li>SciPy: беглое знакомство со списком модулей </li>
-										</ol>
-									</li>
-								</ol>
+								<div class="programm__course__more__inner__title">Неделя <span>Введение</span></div>
+								<div class="programm__course__more__inner__title">Неделя <span>Библиотека Python и линейная алгебра</span></div>
+								<div class="programm__course__more__inner__title">Неделя <span>Оптимизация и матричные разложения</span></div>
+								<div class="programm__course__more__inner__title">Неделя <span>Случайность</span></div>
 							</div>
 						</div>
 						<div class="programm__course__bth-more">
@@ -410,7 +370,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="infoparners">
+	<section class="infoparners" style="display:none;">
 		<div class="container">
 			<div class="infoparners__title">Инфопартнёры</div>
 			<div class="row">
@@ -502,7 +462,7 @@
 			</div>
 		</div> <!-- .container -->
 	</section>
-	<section class="bottom">
+	<section id="bottom" class="bottom">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
@@ -512,35 +472,35 @@
 						<ul class="bottom__item__pricelist">
 							<li class="bottom__item__pricelist__row clearfix">
 								<div class="bottom__item__pricelist__item">1 Математика и Python для анализа данных</div>
-								<div class="bottom__item__pricelist__price">4 329 <span class="rub">&#8381;</span></div>
+								<div class="bottom__item__pricelist__price">4 543 <span class="rub">&#8381;</span></div>
 							</li>
 							<li class="bottom__item__pricelist__row clearfix">
 								<div class="bottom__item__pricelist__item">2 Обучение на размеченных данных</div>
-								<div class="bottom__item__pricelist__price">4 329 <span class="rub">&#8381;</span></div>
+								<div class="bottom__item__pricelist__price">4 543 <span class="rub">&#8381;</span></div>
 							</li>
 							<li class="bottom__item__pricelist__row clearfix">
 								<div class="bottom__item__pricelist__item">3 Поиск структуры в данных</div>
-								<div class="bottom__item__pricelist__price">4 329 <span class="rub">&#8381;</span></div>
+								<div class="bottom__item__pricelist__price">4 543 <span class="rub">&#8381;</span></div>
 							</li>
 							<li class="bottom__item__pricelist__row clearfix">
 								<div class="bottom__item__pricelist__item">4 Построение выводов по данным</div>
-								<div class="bottom__item__pricelist__price">4 329 <span class="rub">&#8381;</span></div>
+								<div class="bottom__item__pricelist__price">4 543 <span class="rub">&#8381;</span></div>
 							</li>
 							<li class="bottom__item__pricelist__row clearfix">
 								<div class="bottom__item__pricelist__item">5 Прикладные задачи анализа данных</div>
-								<div class="bottom__item__pricelist__price">4 329 <span class="rub">&#8381;</span></div>
+								<div class="bottom__item__pricelist__price">4 543 <span class="rub">&#8381;</span></div>
 							</li>
 							<li class="bottom__item__pricelist__row clearfix">
 								<div class="bottom__item__pricelist__item">6 Анализ данных: финальный проект</div>
-								<div class="bottom__item__pricelist__price">4 329 <span class="rub">&#8381;</span></div>
+								<div class="bottom__item__pricelist__price">4 543 <span class="rub">&#8381;</span></div>
 							</li>
 							<li class="bottom__item__pricelist__row clearfix">
 								<div class="bottom__item__pricelist__item">Сумма</div>
-								<div class="bottom__item__pricelist__price small">25 974 <span class="rub">&#8381;</span></div>
+								<div class="bottom__item__pricelist__price small">27 258 <span class="rub">&#8381;</span></div>
 							</li>
 							<li class="bottom__item__pricelist__row clearfix">
 								<div class="bottom__item__pricelist__item">Сумма со скидкой</div>
-								<div class="bottom__item__pricelist__price">23 376 <span class="rub">&#8381;</span></div>
+								<div class="bottom__item__pricelist__price">24 532 <span class="rub">&#8381;</span></div>
 							</li>
 						</ul>
 						<div class="bottom__item__bottomtext"><span class="redbold">Скидка 10%</span> процентов при оплате всех курсов, дипломного проекта и сертификаты об окончании специализации сразу.</div>
