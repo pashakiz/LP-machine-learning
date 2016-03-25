@@ -102,9 +102,10 @@
 		float: left;
 		margin-right: 9px;
 	}
-	.header .nav .nav-item .nav-item-lnk {
-		padding-right: 30px;
-		padding-left: 30px;
+	.header .nav .nav-item .nav-item-lnk,
+	.header.fixed_menu .nav .nav-item .nav-item-lnk.btn-on-fixed {
+		padding-right: 28px;
+		padding-left: 28px;
 	}
 	.first-screen__h1 {
 		margin-top: 97px;
@@ -179,6 +180,10 @@
 	.header .nav .nav-item .nav-item-lnk {
 		padding-right: 50px;
 		padding-left: 50px;
+	}
+	.header.fixed_menu .nav .nav-item .nav-item-lnk.btn-on-fixed {
+		padding-right: 45px;
+		padding-left: 45px;
 	}
 	.btn-first-screen {
 		margin-bottom: 15px;

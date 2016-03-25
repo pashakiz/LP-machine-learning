@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	//fixed menu on scroll
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 80) {
+		if ($(this).scrollTop() > 1) {
 			$(".header").addClass("fixed_menu");
 			$("body").addClass("fixed_menu_fix");
 		} else {

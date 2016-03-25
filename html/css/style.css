@@ -141,6 +141,8 @@ header.header.fixed_menu {
 	box-shadow:         0px 5px 0px 0px rgba(232, 188, 12, 1);
 	padding-top: 14px;
 	padding-bottom: 12px;
+	padding-left: 45px;
+	padding-right: 45px;
 	position: relative;
 	border-color: transparent;
 }
@@ -353,9 +355,6 @@ header.header.fixed_menu {
 	background-repeat: no-repeat;
 	background-position: -176px -155px;
 	margin: 21px auto 6px;
-}
-.forwho__sidebar__item__value__imglogo:hover {
-	background-position: -358px -155px;
 }
 .forwho__sidebar__item__value__imgicon {
 	width: 17px;
@@ -606,12 +605,19 @@ header.header.fixed_menu {
 	padding: 20px 0;
 	border-top: 1px solid #d8d8d8;
 	border-bottom: 1px solid #d8d8d8;
+	font-size: 18px;
 	counter-reset:  item;
 }
 .programm__course__more__inner__title {
 	font-size: 18px;
 	margin: 0  0 17px 0;
+	color: #33c7b0;
+	font-weight: bold;
 }
+ .programm__course__more__inner__title__value {
+ 	color: #282a2c;
+ 	font-weight: normal;
+ }
 .programm__course__more__inner__text {
 	font-size: 13px;
 	line-height: 18px;
