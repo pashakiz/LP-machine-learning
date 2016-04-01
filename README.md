@@ -16,7 +16,7 @@
 Копировать в `/wp-content/themes/lubus/`<br>
 папка с готовой темой (по умолчанию сайт будет со стоимостью в конце)
 
-##/wp_root/themes-lubus-noprice
+###/wp_root/themes-lubus-noprice
 Копировать в `/wp-content/themes/lubus/` **после** копирования `themes-lubus-price`<br>
 только изменения для `themes-lubus-price`
 
