@@ -146,7 +146,7 @@
 					<div class="features__item">
 						<div class="features__item__icon i1"></div>
 						<div class="features__item__title"><?php the_field('features-item1-title'); ?></div>
-						<div class="features__item__text"><?php the_field('features-item1-text'); ?><div class="features__item__text__red" title="По версии Harvard business review"><?php the_field('features-item1-text2'); ?></div></div>
+						<div class="features__item__text"><?php the_field('features-item1-text'); ?><br><div class="features__item__text__red" title="По версии Harvard business review"><?php the_field('features-item1-text2'); ?></div></div>
 					</div>
 				</div>
 				<div class="col-md-6">
