@@ -9,7 +9,7 @@
 
 В файле <b>wp-config.php</b> нужно прописать доступ к БД (см. <b>wp-config-sample.php</b>)<br>
 
-Также нужно изменить ссылки на сайт в БД (через phpMyAdmin).
+Также нужно изменить ссылки на сайт в БД (через phpMyAdmin или сразу в файле lpml.sql в любом текстовом редакторе).
 Подробнее см. [Перенос WordPress на другой домен](http://pro-wordpress.ru/chast-1-nastraivaem-svoj-blog/nastrojka/perenos-wordpress-bloga-na-drugoj-xosting-ili-domen.php)
 
 ###/wp_root/themes-lubus-price
