@@ -13,10 +13,12 @@
 Подробнее см. [Перенос WordPress на другой домен](http://pro-wordpress.ru/chast-1-nastraivaem-svoj-blog/nastrojka/perenos-wordpress-bloga-na-drugoj-xosting-ili-domen.php)
 
 ##/wp_root/themes-lubus-price
+Копировать в `/wp-content/themes/lubus/`<br>
 папка с готовой темой (по умолчанию сайт будет со стоимостью в конце)
 
 ##/wp_root/themes-lubus-noprice
-только изменения для `themes-lubus-price` 
+Копировать в `/wp-content/themes/lubus/` **после** копирования `themes-lubus-price`<br>
+только изменения для `themes-lubus-price`
 
 Порядок разворачивания сайта:
 1. залить /wp_root/wp на свой хостинг
