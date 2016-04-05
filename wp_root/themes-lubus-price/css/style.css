@@ -484,7 +484,9 @@ header.header.fixed_menu {
 	line-height: 20px;
 }
 .features__item__text__red {
+	display: inline;
 	color: #f16449;
+	border-bottom: 1px dotted #f16449;
 }
 .lectors {
 	padding: 44px 0 20px;
@@ -894,11 +896,10 @@ header.header.fixed_menu {
 	background-repeat: repeat;
 	background-position: 0 98px;
 	background-size: cover;
-	padding: 50px 0 50px 0;
+	padding: 50px 0 0 0;
 }
 .bottom.price {
 	background-size: contain;
-	padding: 50px 0 0 0;
 }
 .bottom__item {
 	background-color: #fff;
@@ -987,9 +988,6 @@ header.header.fixed_menu {
 .bottom__item__text a:hover {
 	text-decoration: none;
 }
-
-
-
 footer {
 	background-color: #282a2c;
 	height: 15px;

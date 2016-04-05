@@ -55,7 +55,7 @@
 				<li class="nav-item"><a class="nav-item-lnk" href="#forwho"><?php the_field('nav1'); ?></a></li>
 				<li class="nav-item"><a class="nav-item-lnk" href="#lectors"><?php the_field('nav2'); ?></a></li>
 				<li class="nav-item"><a class="nav-item-lnk" href="#programm"><?php the_field('nav3'); ?></a></li>
-				<li class="nav-item"><a class="nav-item-lnk btn-on-fixed" href="#firstscreen"><?php the_field('nav4'); ?></a></li>
+				<li class="nav-item"><a class="nav-item-lnk btn-on-fixed" href="#bottom"><?php the_field('nav4'); ?></a></li>
 			</ul>
 		</div>
 	</header>
@@ -560,11 +560,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<div class="bottom__item" style="display: none;">
+					<div class="bottom__item">
 						<div class="bottom__item__btn-bottom__container">
-							<a class="btn bottom__item__btn-bottom-coursera" href="https://www.coursera.org/specializations/mashinnoye-obucheniye" target="_blank"><div class="bottom__item__btn__img"></div></a>
+							<a class="btn bottom__item__btn-bottom-coursera" href="<?php the_field('url-coursera'); ?>" target="_blank"><div class="bottom__item__btn__img"></div></a>
 						</div>
-						<div class="bottom__item__text">Большая часть материалов (видео, конспекты, примеры программ, часть тестов) доступна бесплатно, однако ряд заданий, прохождение которых нужно для получения сертификата, помечены “замком” и доступны только после оплаты. Если слушатель хочет получить доступ ко всем заданиям, сертификату и финальному проекту, но не имеет возможности оплатить их, можно воспользоваться программой финансовой поддержки ( <a href="https://learner.coursera.help/hc/en-us/articles/201523175-Financial-Aid" target="_blank">Coursera Financial Aid</a> ).</div>
+						<div class="bottom__item__text"><?php the_field('bottom-noprice'); ?></div>
 					</div> <!-- .bottom__item -->
 				</div>
 			</div> <!-- .row -->
