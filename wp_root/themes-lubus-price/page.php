@@ -42,8 +42,8 @@
 	<meta property="fb:app_id" content="<?php the_field('social-share-fbappid'); ?>" />
 	<!-- Facebook Open Graph (end) -->
 </head>
-<body>
-	<header class="header">
+<body class="fixed_menu_fix">
+	<header class="header fixed_menu">
 		<div class="container clearfix">
 			<div class="logo"><?php the_field('logo'); ?></div>
 			<div class="btn-nav-toggle">

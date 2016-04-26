@@ -1,16 +1,5 @@
 $(document).ready(function() {
 
-	//fixed menu on scroll
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 1) {
-			$(".header").addClass("fixed_menu");
-			$("body").addClass("fixed_menu_fix");
-		} else {
-			$(".header").removeClass("fixed_menu");
-			$("body").removeClass("fixed_menu_fix");
-		}
-	});
-
 	// show/hide menu nav in mobile view
 	$(".btn-nav-toggle").on("click", function(event) {
 		if(document.documentElement.clientWidth < 992) {

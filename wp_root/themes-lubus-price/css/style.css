@@ -709,19 +709,18 @@ header.header.fixed_menu {
 }
 .parners__lnk {
 	display: block;
-	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
 	margin: 0 auto 0;
 }
 .parners__lnk.mipt {
 	width: 301px;
 	height: 90px;
-	background-position: -176px -64px;
+	background-image: url(../img/logo-mipt.svg);
 }
 .parners__lnk.yandex {
 	width: 201px;
 	height: 80px;
-	background-position: -477px -64px;
+	background-image: url(../img/logo-yandex.svg);
 	margin: 30px auto 0;
 }
 .infoparners {
